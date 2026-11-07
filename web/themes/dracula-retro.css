@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Theme: dracula-retro
+   Classic dark gothic retro palette beloved by developers.
+   ========================================================================== */
+
+:root {
+  --bg-body: #1e1f29;
+  --bg-terminal: #282a36;
+  --bg-header: #21222c;
+  --bg-surface: #2d303e;
+  --bg-surface-elevated: #343746;
+
+  --border-color: #44475a;
+  --border-focus: #bd93f9;
+
+  --text-primary: #f8f8f2;
+  --text-secondary: #a4a8c2;
+  --text-muted: #6272a4;
+  --text-accent: #bd93f9;
+  --accent-rgb: 189, 147, 249;
+
+  --srt-color: #50fa7b;
+  --zip-color: #ffb86c;
+  --badge-bg: rgba(189, 147, 249, 0.15);
+
+  --warning-text: #ffb86c;
+  --warning-bg: rgba(255, 184, 108, 0.12);
+  --warning-border: rgba(255, 184, 108, 0.35);
+}

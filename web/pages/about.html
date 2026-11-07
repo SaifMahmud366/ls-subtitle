@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | ls-subtitle</title>
+  <meta name="description" content="About ls-subtitle: A clean, modern CLI-style index for AI-translated Bengali subtitles.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%200%20100%20100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Tailwind CSS (compiled locally; rebuild with: see README) -->
+  <link rel="stylesheet" href="../css/tailwind.min.css">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Fonts: Inter for text, JetBrains Mono for code/paths -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Theme Stylesheets -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link id="ls-theme-stylesheet" rel="stylesheet" href="../themes/dark-neon.css">
+</head>
+<body class="bg-darkbg text-white font-sans min-h-screen flex flex-col selection:bg-brand selection:text-black">
+
+  <!-- Navbar -->
+  <nav class="theme-nav border-b border-border py-4 px-6 md:px-12 flex justify-between items-center backdrop-blur-md sticky top-0 z-50">
+    <a href="../../index.html" class="flex items-center gap-2 whitespace-nowrap flex-shrink-0 text-brand font-mono font-bold text-xl hover:opacity-90 transition-opacity">
+      <i class="fa-solid fa-folder-open"></i>
+      <span>_ ls-subtitle</span>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <div class="hidden lg:flex gap-6 text-sm text-muted font-medium">
+      <a href="../../index.html" class="hover:text-white transition-colors">Home</a>
+      <a href="about.html" class="text-white font-semibold">About</a>
+      <a href="contribute.html" class="hover:text-white transition-colors">Contribute</a>
+      <a href="disclaimer.html" class="hover:text-white transition-colors">Disclaimer</a>
+      <a href="https://github.com/SaifMahmud366/ls-subtitle" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+
+    <!-- Right Action Button -->
+    <div class="flex items-center gap-3">
+      <div class="relative hidden sm:flex items-center">
+        <select id="theme-select" class="theme-select bg-cardbg border border-border rounded-md px-2 py-1.5 text-xs text-white focus:outline-none focus:border-brand transition-colors cursor-pointer">
+        </select>
+      </div>
+
+      <a href="contribute.html" class="nav-contribute theme-glow bg-brand hover:opacity-90 text-black font-semibold py-2 px-4 rounded-md text-sm transition-all flex items-center gap-2" aria-label="Contribute">
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+        <span>Contribute</span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button id="mobile-menu-btn" class="lg:hidden text-muted hover:text-white p-2 rounded focus:outline-none" aria-label="Toggle Navigation Menu" aria-controls="mobile-menu" aria-expanded="false">
+        <i class="fa-solid fa-bars text-lg"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden border-b border-border bg-cardbg px-6 py-4 flex-col gap-3 text-sm">
+    <label for="mobile-theme-select" class="text-muted text-xs">Color theme</label>
+    <select id="mobile-theme-select" class="theme-select theme-input border border-border rounded-md px-2 py-2 text-sm focus:outline-none focus:border-brand"></select>
+    <a href="../../index.html" class="text-muted hover:text-white py-1">Home</a>
+    <a href="about.html" class="text-brand font-semibold py-1">About</a>
+    <a href="contribute.html" class="text-muted hover:text-white py-1">Contribute</a>
+    <a href="disclaimer.html" class="text-muted hover:text-white py-1">Disclaimer</a>
+    <a href="https://github.com/SaifMahmud366/ls-subtitle" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-white py-1 flex items-center gap-2">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8 md:py-12 max-w-4xl">
+
+    <!-- Path Breadcrumbs -->
+    <div class="mb-8 flex items-center gap-2 text-sm font-mono text-muted bg-cardbg border border-border rounded-lg p-3">
+      <i class="fa-solid fa-terminal text-brand"></i>
+      <a href="../../index.html" class="text-white hover:text-brand transition-colors">root</a>
+      <span>/</span>
+      <span class="text-brand">about.html</span>
+      <span class="ml-auto text-xs opacity-50">man ls-subtitle</span>
+    </div>
+
+    <!-- Documentation Card -->
+    <div class="bg-cardbg border border-border rounded-xl p-6 md:p-10 shadow-2xl space-y-8">
+
+      <!-- Header Section -->
+      <div class="border-b border-border pb-6">
+        <div class="flex items-center gap-2 text-xs font-mono text-brand mb-2">
+          <span>$</span><span>man ls-subtitle(1)</span>
+        </div>
+        <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-white mb-2">About ls-subtitle</h1>
+        <p class="text-sm text-muted">A clean, high-performance static file index for AI-translated Bengali subtitles.</p>
+      </div>
+
+      <!-- Section: Overview -->
+      <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-info text-brand text-sm"></i> Project Overview
+        </h2>
+        <p class="text-sm text-muted leading-relaxed">
+          <strong class="text-white">ls-subtitle</strong> is a minimalist, modern static web index designed to browse and download AI-translated Bengali subtitles directly from a GitHub repository.
+        </p>
+        <p class="text-sm text-muted leading-relaxed">
+          Built for cinephiles, anime fans, and developers, it transforms the GitHub repository directory structure into a fast, tactile file explorer with zero server overhead.
+        </p>
+      </section>
+
+      <!-- Section: How It Works -->
+      <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+          <i class="fa-solid fa-bolt text-brand text-sm"></i> How It Works (Zero Backend)
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+          <div class="theme-surface border border-border rounded-lg p-4">
+            <h3 class="font-semibold text-white mb-1 flex items-center gap-2">
+              <i class="fa-solid fa-network-wired text-brand text-xs"></i> Automated Tree Discovery
+            </h3>
+            <p class="text-muted text-xs leading-relaxed">
+              On page load, it queries GitHub's REST Trees API (<code class="text-muted">git/trees/main?recursive=1</code>) to construct folder hierarchies on the fly.
+            </p>
+          </div>
+          <div class="theme-surface border border-border rounded-lg p-4">
+            <h3 class="font-semibold text-white mb-1 flex items-center gap-2">
+              <i class="fa-solid fa-cloud-arrow-down text-brand text-xs"></i> Single-Click Downloads
+            </h3>
+            <p class="text-muted text-xs leading-relaxed">
+              Clicking any subtitle or season pack immediately streams the raw file from GitHub with instant toast feedback.
+            </p>
+          </div>
+          <div class="theme-surface border border-border rounded-lg p-4">
+            <h3 class="font-semibold text-white mb-1 flex items-center gap-2">
+              <i class="fa-solid fa-arrows-rotate text-brand text-xs"></i> Always Fresh
+            </h3>
+            <p class="text-muted text-xs leading-relaxed">
+              Tree data is fetched fresh on every load (<code class="text-muted">cacheTTL: 0</code>) so newly pushed subtitles appear immediately. Use the refresh button to re-sync without reloading.
+            </p>
+          </div>
+          <div class="theme-surface border border-border rounded-lg p-4">
+            <h3 class="font-semibold text-white mb-1 flex items-center gap-2">
+              <i class="fa-brands fa-github text-brand text-xs"></i> Pure Static Hosting
+            </h3>
+            <p class="text-muted text-xs leading-relaxed">
+              No database, Node server, or backend needed. Hosted directly via GitHub Pages as lightweight static files.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Supported File Types -->
+      <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+          <i class="fa-solid fa-file text-brand text-sm"></i> Supported File Types
+        </h2>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <div class="flex-1 theme-surface border border-border rounded-lg p-4 flex items-start gap-3">
+            <i class="fa-regular fa-file-lines icon-srt text-xl mt-0.5"></i>
+            <div>
+              <span class="font-mono font-semibold text-white text-sm">.srt</span>
+              <p class="text-xs text-muted mt-0.5">Individual UTF-8 encoded Bengali subtitle file for movies or single episodes.</p>
+            </div>
+          </div>
+          <div class="flex-1 theme-surface border border-border rounded-lg p-4 flex items-start gap-3">
+            <i class="fa-solid fa-file-zipper icon-zip text-xl mt-0.5"></i>
+            <div>
+              <span class="font-mono font-semibold text-white text-sm">.zip</span>
+              <p class="text-xs text-muted mt-0.5">Complete season packs containing multiple .srt subtitles for binge-watching.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Architecture -->
+      <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+          <i class="fa-solid fa-sitemap text-brand text-sm"></i> Clean Folder Architecture
+        </h2>
+        <div class="code-block-wrapper theme-surface border border-border rounded-lg overflow-hidden font-mono text-xs">
+          <div class="theme-surface-header px-4 py-2 border-b border-border flex justify-between items-center text-muted">
+            <span>structure.txt</span>
+            <button class="code-copy-btn hover:text-white transition-colors flex items-center gap-1">
+              <i class="fa-regular fa-copy"></i> <span>Copy</span>
+            </button>
+          </div>
+          <pre class="p-4 text-muted overflow-x-auto leading-relaxed">ls-subtitle/
+├── Subtitles/                &lt;-- Subtitle repository root (Source of truth)
+│   ├── Anime/
+│   ├── Movies/
+│   └── Tv-series/
+├── web/                      &lt;-- All web frontend assets
+│   ├── css/
+│   ├── js/
+│   ├── pages/
+│   └── themes/
+├── index.html                &lt;-- Main clean file index interface
+└── README.md</pre>
+        </div>
+      </section>
+
+      <!-- Callout Box -->
+      <div class="bg-brand/10 border border-brand/30 rounded-lg p-4 flex items-start gap-3">
+        <i class="fa-solid fa-code-pull-request text-brand text-lg mt-0.5"></i>
+        <div class="text-sm">
+          <span class="font-semibold text-brand">Want to contribute subtitles?</span>
+          <p class="text-muted text-xs mt-1">
+            Contributions are community-driven! Visit our <a href="contribute.html" class="text-brand underline hover:opacity-90 font-medium">Contribution Guide</a> to submit your subtitles via GitHub Pull Request.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-border py-6 text-center text-sm text-muted">
+    <p>Powered by <a href="https://github.com/SaifMahmud366/ls-subtitle" target="_blank" rel="noopener noreferrer" class="text-white hover:text-brand font-mono transition-colors">ls-subtitle</a> &copy; <span data-current-year>2026</span></p>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/animations.js"></script>
+  <script>
+    const mobileBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener("click", () => {
+        const isOpen = mobileBtn.getAttribute("aria-expanded") === "true";
+        mobileBtn.setAttribute("aria-expanded", String(!isOpen));
+        mobileMenu.classList.toggle("hidden", isOpen);
+        mobileMenu.classList.toggle("flex", !isOpen);
+      });
+      mobileMenu.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+        mobileBtn.setAttribute("aria-expanded", "false");
+        mobileMenu.classList.add("hidden");
+        mobileMenu.classList.remove("flex");
+      }));
+    }
+  </script>
+</body>
+</html>

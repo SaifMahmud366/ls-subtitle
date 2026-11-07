@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer | ls-subtitle</title>
+  <meta name="description" content="Legal and AI translation notices for ls-subtitle.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%200%20100%20100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Tailwind CSS (compiled locally; rebuild with: see README) -->
+  <link rel="stylesheet" href="../css/tailwind.min.css">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Fonts: Inter for text, JetBrains Mono for code/paths -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Theme Stylesheets -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link id="ls-theme-stylesheet" rel="stylesheet" href="../themes/dark-neon.css">
+</head>
+<body class="bg-darkbg text-white font-sans min-h-screen flex flex-col selection:bg-brand selection:text-black">
+
+  <!-- Navbar -->
+  <nav class="theme-nav border-b border-border py-4 px-6 md:px-12 flex justify-between items-center backdrop-blur-md sticky top-0 z-50">
+    <a href="../../index.html" class="flex items-center gap-2 whitespace-nowrap flex-shrink-0 text-brand font-mono font-bold text-xl hover:opacity-90 transition-opacity">
+      <i class="fa-solid fa-folder-open"></i>
+      <span>_ ls-subtitle</span>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <div class="hidden lg:flex gap-6 text-sm text-muted font-medium">
+      <a href="../../index.html" class="hover:text-white transition-colors">Home</a>
+      <a href="about.html" class="hover:text-white transition-colors">About</a>
+      <a href="contribute.html" class="hover:text-white transition-colors">Contribute</a>
+      <a href="disclaimer.html" class="text-white font-semibold">Disclaimer</a>
+      <a href="https://github.com/SaifMahmud366/ls-subtitle" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+
+    <!-- Right Action Button -->
+    <div class="flex items-center gap-3">
+      <div class="relative hidden sm:flex items-center">
+        <select id="theme-select" class="theme-select bg-cardbg border border-border rounded-md px-2 py-1.5 text-xs text-white focus:outline-none focus:border-brand transition-colors cursor-pointer">
+        </select>
+      </div>
+
+      <a href="contribute.html" class="nav-contribute theme-glow bg-brand hover:opacity-90 text-black font-semibold py-2 px-4 rounded-md text-sm transition-all flex items-center gap-2" aria-label="Contribute">
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+        <span>Contribute</span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button id="mobile-menu-btn" class="lg:hidden text-muted hover:text-white p-2 rounded focus:outline-none" aria-label="Toggle Navigation Menu" aria-controls="mobile-menu" aria-expanded="false">
+        <i class="fa-solid fa-bars text-lg"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden border-b border-border bg-cardbg px-6 py-4 flex-col gap-3 text-sm">
+    <label for="mobile-theme-select" class="text-muted text-xs">Color theme</label>
+    <select id="mobile-theme-select" class="theme-select theme-input border border-border rounded-md px-2 py-2 text-sm focus:outline-none focus:border-brand"></select>
+    <a href="../../index.html" class="text-muted hover:text-white py-1">Home</a>
+    <a href="about.html" class="text-muted hover:text-white py-1">About</a>
+    <a href="contribute.html" class="text-muted hover:text-white py-1">Contribute</a>
+    <a href="disclaimer.html" class="text-brand font-semibold py-1">Disclaimer</a>
+    <a href="https://github.com/SaifMahmud366/ls-subtitle" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-white py-1 flex items-center gap-2">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8 md:py-12 max-w-4xl">
+
+    <!-- Path Breadcrumbs -->
+    <div class="mb-8 flex items-center gap-2 text-sm font-mono text-muted bg-cardbg border border-border rounded-lg p-3">
+      <i class="fa-solid fa-terminal text-brand"></i>
+      <a href="../../index.html" class="text-white hover:text-brand transition-colors">root</a>
+      <span>/</span>
+      <span class="text-brand">disclaimer.html</span>
+      <span class="ml-auto text-xs opacity-50">cat DISCLAIMER.txt</span>
+    </div>
+
+    <!-- Documentation Card -->
+    <div class="bg-cardbg border border-border rounded-xl p-6 md:p-10 shadow-2xl space-y-8">
+
+      <!-- Header Section -->
+      <div class="border-b border-border pb-6">
+        <div class="flex items-center gap-2 text-xs font-mono text-brand mb-2">
+          <span>$</span><span>cat DISCLAIMER.txt</span>
+        </div>
+        <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-white mb-2">Legal &amp; Translation Notice</h1>
+        <p class="text-sm text-muted">Important notices regarding AI translations and non-hosting policies.</p>
+      </div>
+
+      <!-- Section: AI Notice -->
+      <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+          <i class="fa-solid fa-robot text-brand text-sm"></i> AI Translation Notice
+        </h2>
+        <p class="text-sm text-muted leading-relaxed">
+          The subtitles cataloged on <strong class="text-white">ls-subtitle</strong> are translated from source languages using Artificial Intelligence (LLM) models and formatted for community viewing.
+        </p>
+        <ul class="space-y-2 text-sm text-muted list-disc list-inside">
+          <li><strong>Accuracy:</strong> While modern neural translation models yield high quality, translations may occasionally contain localized phrasing nuances or literal interpretations of idioms.</li>
+          <li><strong>Timing &amp; Sync:</strong> Subtitles are aligned to specific release rips. If playing a different video version, you can adjust subtitle sync in media players like VLC using the keyboard shortcuts <kbd class="theme-surface-header px-1 py-0.5 rounded border border-border text-white text-xs">G</kbd> (delay) and <kbd class="theme-surface-header px-1 py-0.5 rounded border border-border text-white text-xs">H</kbd> (hasten).</li>
+        </ul>
+      </section>
+
+      <!-- Section: Non-Hosting Policy -->
+      <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+          <i class="fa-solid fa-shield-halved text-brand text-sm"></i> Non-Hosting &amp; Copyright Policy
+        </h2>
+        <p class="text-sm text-muted leading-relaxed">
+          <strong class="text-white">ls-subtitle</strong> operates strictly as a text index:
+        </p>
+        <ul class="space-y-2 text-sm text-muted list-disc list-inside">
+          <li><strong>No Video / Audio Hosting:</strong> This project does not host, stream, link to, or store any copyrighted video or audio streams under any circumstances.</li>
+          <li><strong>Plain-Text Only:</strong> All files hosted in the GitHub repository consist exclusively of text subtitles (<code class="font-mono text-white">.srt</code>) and zip archives (<code class="font-mono text-white">.zip</code>) containing subtitle files.</li>
+          <li><strong>Trademarks:</strong> Title names, characters, and franchise brands are the property of their respective copyright owners and are cited solely for descriptive and indexing purposes.</li>
+        </ul>
+      </section>
+
+      <!-- Section: Takedown Requests -->
+      <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+          <i class="fa-solid fa-envelope-open-text text-brand text-sm"></i> Takedown &amp; Removal Requests
+        </h2>
+        <p class="text-sm text-muted leading-relaxed">
+          If you are a copyright owner or authorized representative and believe any text file indexed here infringes upon your copyright, please open an issue or pull request on GitHub:
+        </p>
+        <div class="theme-surface border border-border rounded-lg p-4 flex items-center justify-between">
+          <span class="text-xs font-mono text-muted">github.com/SaifMahmud366/ls-subtitle/issues</span>
+          <a href="https://github.com/SaifMahmud366/ls-subtitle/issues" target="_blank" rel="noopener noreferrer" class="text-brand hover:opacity-90 text-xs font-semibold flex items-center gap-1">
+            <span>Open Issue</span> <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-border py-6 text-center text-sm text-muted">
+    <p>Powered by <a href="https://github.com/SaifMahmud366/ls-subtitle" target="_blank" rel="noopener noreferrer" class="text-white hover:text-brand font-mono transition-colors">ls-subtitle</a> &copy; <span data-current-year>2026</span></p>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/animations.js"></script>
+  <script>
+    const mobileBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener("click", () => {
+        const isOpen = mobileBtn.getAttribute("aria-expanded") === "true";
+        mobileBtn.setAttribute("aria-expanded", String(!isOpen));
+        mobileMenu.classList.toggle("hidden", isOpen);
+        mobileMenu.classList.toggle("flex", !isOpen);
+      });
+      mobileMenu.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+        mobileBtn.setAttribute("aria-expanded", "false");
+        mobileMenu.classList.add("hidden");
+        mobileMenu.classList.remove("flex");
+      }));
+    }
+  </script>
+</body>
+</html>

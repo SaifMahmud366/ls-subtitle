@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Theme: synthwave-84
+   Vibrant 80s retro-futuristic neon aesthetic with hot pink and electric cyan.
+   ========================================================================== */
+
+:root {
+  --bg-body: #160d26;
+  --bg-terminal: #1f1435;
+  --bg-header: #180f2d;
+  --bg-surface: #261942;
+  --bg-surface-elevated: #302052;
+
+  --border-color: #4b3279;
+  --border-focus: #ff71ce;
+
+  --text-primary: #fdf5ff;
+  --text-secondary: #c5aee2;
+  --text-muted: #846d9f;
+  --text-accent: #ff71ce;
+  --accent-rgb: 255, 113, 206;
+
+  --srt-color: #05ffa1;
+  --zip-color: #ffe600;
+  --badge-bg: rgba(255, 113, 206, 0.15);
+
+  --warning-text: #ffe600;
+  --warning-bg: rgba(255, 230, 0, 0.12);
+  --warning-border: rgba(255, 230, 0, 0.35);
+}

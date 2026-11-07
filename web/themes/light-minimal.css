@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Theme: light-minimal
+   A crisp, modern, light terminal interface with high legibility.
+   ========================================================================== */
+
+:root {
+  --bg-body: #f8fafc;
+  --bg-terminal: #ffffff;
+  --bg-header: #f1f5f9;
+  --bg-surface: #f8fafc;
+  --bg-surface-elevated: #ffffff;
+
+  --border-color: #cbd5e1;
+  --border-focus: #0284c7;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-accent: #0284c7;
+  --accent-rgb: 2, 132, 199;
+
+  --srt-color: #059669;
+  --zip-color: #d97706;
+  --badge-bg: rgba(2, 132, 199, 0.1);
+
+  --warning-text: #92400e;
+  --warning-bg: rgba(245, 158, 11, 0.14);
+  --warning-border: rgba(180, 83, 9, 0.35);
+}

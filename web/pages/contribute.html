@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contribute | ls-subtitle</title>
+  <meta name="description" content="Contribution Guide for ls-subtitle: How to add AI-translated Bengali subtitles via GitHub Pull Request.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%200%20100%20100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Tailwind CSS (compiled locally; rebuild with: see README) -->
+  <link rel="stylesheet" href="../css/tailwind.min.css">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Fonts: Inter for text, JetBrains Mono for code/paths -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Theme Stylesheets -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link id="ls-theme-stylesheet" rel="stylesheet" href="../themes/dark-neon.css">
+</head>
+<body class="bg-darkbg text-white font-sans min-h-screen flex flex-col selection:bg-brand selection:text-black">
+
+  <!-- Navbar -->
+  <nav class="theme-nav border-b border-border py-4 px-6 md:px-12 flex justify-between items-center backdrop-blur-md sticky top-0 z-50">
+    <a href="../../index.html" class="flex items-center gap-2 whitespace-nowrap flex-shrink-0 text-brand font-mono font-bold text-xl hover:opacity-90 transition-opacity">
+      <i class="fa-solid fa-folder-open"></i>
+      <span>_ ls-subtitle</span>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <div class="hidden lg:flex gap-6 text-sm text-muted font-medium">
+      <a href="../../index.html" class="hover:text-white transition-colors">Home</a>
+      <a href="about.html" class="hover:text-white transition-colors">About</a>
+      <a href="contribute.html" class="text-white font-semibold">Contribute</a>
+      <a href="disclaimer.html" class="hover:text-white transition-colors">Disclaimer</a>
+      <a href="https://github.com/SaifMahmud366/ls-subtitle" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+
+    <!-- Right Action Button -->
+    <div class="flex items-center gap-3">
+      <div class="relative hidden sm:flex items-center">
+        <select id="theme-select" class="theme-select bg-cardbg border border-border rounded-md px-2 py-1.5 text-xs text-white focus:outline-none focus:border-brand transition-colors cursor-pointer">
+        </select>
+      </div>
+
+      <a href="https://github.com/SaifMahmud366/ls-subtitle/pulls" target="_blank" rel="noopener noreferrer" class="nav-contribute theme-glow bg-brand hover:opacity-90 text-black font-semibold py-2 px-4 rounded-md text-sm transition-all flex items-center gap-2" aria-label="Create a pull request">
+        <i class="fa-solid fa-code-pull-request"></i>
+        <span>Open PR</span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button id="mobile-menu-btn" class="lg:hidden text-muted hover:text-white p-2 rounded focus:outline-none" aria-label="Toggle Navigation Menu" aria-controls="mobile-menu" aria-expanded="false">
+        <i class="fa-solid fa-bars text-lg"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden border-b border-border bg-cardbg px-6 py-4 flex-col gap-3 text-sm">
+    <label for="mobile-theme-select" class="text-muted text-xs">Color theme</label>
+    <select id="mobile-theme-select" class="theme-select theme-input border border-border rounded-md px-2 py-2 text-sm focus:outline-none focus:border-brand"></select>
+    <a href="../../index.html" class="text-muted hover:text-white py-1">Home</a>
+    <a href="about.html" class="text-muted hover:text-white py-1">About</a>
+    <a href="contribute.html" class="text-brand font-semibold py-1">Contribute</a>
+    <a href="disclaimer.html" class="text-muted hover:text-white py-1">Disclaimer</a>
+    <a href="https://github.com/SaifMahmud366/ls-subtitle" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-white py-1 flex items-center gap-2">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8 md:py-12 max-w-4xl">
+
+    <!-- Path Breadcrumbs -->
+    <div class="mb-8 flex items-center gap-2 text-sm font-mono text-muted bg-cardbg border border-border rounded-lg p-3">
+      <i class="fa-solid fa-terminal text-brand"></i>
+      <a href="../../index.html" class="text-white hover:text-brand transition-colors">root</a>
+      <span>/</span>
+      <span class="text-brand">contribute.html</span>
+      <span class="ml-auto text-xs opacity-50">cat CONTRIBUTE.md</span>
+    </div>
+
+    <!-- Documentation Card -->
+    <div class="bg-cardbg border border-border rounded-xl p-6 md:p-10 shadow-2xl space-y-8">
+
+      <!-- Header Section -->
+      <div class="border-b border-border pb-6">
+        <div class="flex items-center gap-2 text-xs font-mono text-brand mb-2">
+          <span>$</span><span>cat CONTRIBUTE.md</span>
+        </div>
+        <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-white mb-2">Contribution Guide</h1>
+        <p class="text-sm text-muted">Learn how to contribute your AI-translated Bengali subtitles via GitHub Pull Request.</p>
+      </div>
+
+      <!-- Step by Step Workflow -->
+      <section class="space-y-4">
+        <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+          <i class="fa-solid fa-list-check text-brand text-sm"></i> 5-Step Contribution Flow
+        </h2>
+
+        <div class="space-y-3 text-sm text-muted">
+          <div class="flex items-start gap-3 theme-surface border border-border rounded-lg p-4">
+            <span class="w-6 h-6 rounded-full bg-brand/20 text-brand font-mono font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
+            <div>
+              <strong class="text-white">Fork the Repository</strong>
+              <p class="text-muted text-xs mt-1">Navigate to <a href="https://github.com/SaifMahmud366/ls-subtitle" target="_blank" class="text-brand underline">github.com/SaifMahmud366/ls-subtitle</a> and click the <strong>Fork</strong> button in the top right.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 theme-surface border border-border rounded-lg p-4">
+            <span class="w-6 h-6 rounded-full bg-brand/20 text-brand font-mono font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
+            <div>
+              <strong class="text-white">Clone &amp; Create a Branch</strong>
+              <p class="text-muted text-xs mt-1">Clone your fork locally and create a descriptive branch: <code class="text-muted font-mono">git checkout -b add-jujutsu-s02</code></p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 theme-surface border border-border rounded-lg p-4">
+            <span class="w-6 h-6 rounded-full bg-brand/20 text-brand font-mono font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
+            <div>
+              <strong class="text-white">Place Subtitles in the Exact Folder</strong>
+              <p class="text-muted text-xs mt-1">Place your <code class="text-muted font-mono">.srt</code> or <code class="text-muted font-mono">.zip</code> files into the proper path under <code class="text-brand font-mono">Subtitles/</code> as shown below.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 theme-surface border border-border rounded-lg p-4">
+            <span class="w-6 h-6 rounded-full bg-brand/20 text-brand font-mono font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
+            <div>
+              <strong class="text-white">Commit and Push</strong>
+              <p class="text-muted text-xs mt-1">Commit your changes with a clear message: <code class="text-muted font-mono">git commit -m "feat(subtitles): add Jujutsu Kaisen S02 Bengali subs"</code></p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 theme-surface border border-border rounded-lg p-4">
+            <span class="w-6 h-6 rounded-full bg-brand/20 text-brand font-mono font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">5</span>
+            <div>
+              <strong class="text-white">Submit a Pull Request</strong>
+              <p class="text-muted text-xs mt-1">Open a Pull Request to merge your branch into <code class="text-muted font-mono">main</code>. Maintainers will review and merge it.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Folder Structure Hierarchy -->
+      <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+          <i class="fa-solid fa-folder-tree text-brand text-sm"></i> Required Directory Structure
+        </h2>
+        <div class="code-block-wrapper theme-surface border border-border rounded-lg overflow-hidden font-mono text-xs">
+          <div class="theme-surface-header px-4 py-2 border-b border-border flex justify-between items-center text-muted">
+            <span>folder-spec.txt</span>
+            <button class="code-copy-btn hover:text-white transition-colors flex items-center gap-1">
+              <i class="fa-regular fa-copy"></i> <span>Copy</span>
+            </button>
+          </div>
+          <pre class="p-4 text-muted overflow-x-auto leading-relaxed">Subtitles/
+├── Anime/
+│   └── {ReleaseYear}/{ShowName}/{Season}/*.srt     (or CompleteSeason.zip)
+├── Movies/
+│   └── {ReleaseYear}/{MovieTitle}/*.srt            (or MovieCollection.zip)
+└── Tv-series/
+    └── {ReleaseYear}/{SeriesName}/{Season}/*.srt   (or CompleteSeason.zip)</pre>
+        </div>
+      </section>
+
+      <!-- Rules and Standards -->
+      <section class="space-y-3">
+        <h2 class="text-lg font-semibold text-white flex items-center gap-2">
+          <i class="fa-solid fa-shield-halved text-brand text-sm"></i> File Guidelines
+        </h2>
+        <ul class="space-y-2 text-sm text-muted list-disc list-inside">
+          <li><strong>Encoding:</strong> All <code class="font-mono text-white">.srt</code> files must be saved with <span class="text-brand font-semibold">UTF-8 encoding</span> so Bengali script displays without corrupt characters.</li>
+          <li><strong>Naming Convention:</strong> Use dot-separated release naming (e.g. <code class="font-mono text-muted">Jujutsu.Kaisen.S02E01.Bangla.srt</code>).</li>
+          <li><strong>Allowed Extensions:</strong> Only <code class="font-mono icon-srt">.srt</code> and <code class="font-mono icon-zip">.zip</code> are indexed. Please do not commit video files, text notes, or torrents.</li>
+        </ul>
+      </section>
+
+      <!-- Ready to PR CTA -->
+      <div class="theme-surface-elevated border border-border rounded-lg p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          <h3 class="font-semibold text-white text-sm">Ready to contribute your subtitles?</h3>
+          <p class="text-xs text-muted mt-0.5">Submit your pull request directly to the GitHub repository.</p>
+        </div>
+        <a href="https://github.com/SaifMahmud366/ls-subtitle/pulls" target="_blank" rel="noopener noreferrer" class="theme-glow bg-brand hover:opacity-90 text-black font-semibold py-2 px-5 rounded-md text-sm transition-all flex items-center gap-2 flex-shrink-0">
+          <i class="fa-solid fa-code-pull-request"></i>
+          <span>Create Pull Request</span>
+        </a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-border py-6 text-center text-sm text-muted">
+    <p>Powered by <a href="https://github.com/SaifMahmud366/ls-subtitle" target="_blank" rel="noopener noreferrer" class="text-white hover:text-brand font-mono transition-colors">ls-subtitle</a> &copy; <span data-current-year>2026</span></p>
+  </footer>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/animations.js"></script>
+  <script>
+    const mobileBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener("click", () => {
+        const isOpen = mobileBtn.getAttribute("aria-expanded") === "true";
+        mobileBtn.setAttribute("aria-expanded", String(!isOpen));
+        mobileMenu.classList.toggle("hidden", isOpen);
+        mobileMenu.classList.toggle("flex", !isOpen);
+      });
+      mobileMenu.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+        mobileBtn.setAttribute("aria-expanded", "false");
+        mobileMenu.classList.add("hidden");
+        mobileMenu.classList.remove("flex");
+      }));
+    }
+  </script>
+</body>
+</html>

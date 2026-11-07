@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Theme: cyber-matrix
+   Phosphor monochrome green terminal aesthetic with high-contrast scanlines.
+   ========================================================================== */
+
+:root {
+  --bg-body: #030804;
+  --bg-terminal: #050d06;
+  --bg-header: #020603;
+  --bg-surface: #0a140a;
+  --bg-surface-elevated: #0f1f10;
+
+  --border-color: #0d3814;
+  --border-focus: #00ff66;
+
+  --text-primary: #e6ffe6;
+  --text-secondary: #5ce67e;
+  --text-muted: #2e8a44;
+  --text-accent: #00ff66;
+  --accent-rgb: 0, 255, 102;
+
+  --srt-color: #00ff66;
+  --zip-color: #ffcc00;
+  --badge-bg: rgba(0, 255, 102, 0.15);
+
+  --warning-text: #ffcc00;
+  --warning-bg: rgba(255, 204, 0, 0.12);
+  --warning-border: rgba(255, 204, 0, 0.35);
+}
